@@ -2,12 +2,18 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 
-import { ComponentBModule } from '@test/lib-a/components';
+import {
+  ComponentAComponent,
+  ComponentAModule,
+  ComponentBModule,
+} from '@test/lib-a/components';
+
 import { AppBOneComponent } from './app-b-one.component';
 
 @NgModule({
   imports: [
     CommonModule,
+    ComponentAModule,
     ComponentBModule,
     RouterModule.forChild([
       {
@@ -20,6 +26,7 @@ import { AppBOneComponent } from './app-b-one.component';
   exports: [RouterModule],
 })
 export class AppBOneModule {
-  constructor(){
+  constructor() {
+    console.log(ComponentAComponent);
   }
 }
