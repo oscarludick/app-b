@@ -21,7 +21,7 @@
     "useDefineForClassFields": false,
     "lib": ["ES2022", "dom"],
     "paths": {
-      "@test/*": ["../../dist/libs/*"]
+      "@testpolymon/*": ["../../dist/libs/*"]
     }
   },
   "angularCompilerOptions": {

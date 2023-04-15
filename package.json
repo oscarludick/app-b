@@ -20,8 +20,8 @@
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.12.0",
-    "@test/lib-a": "^0.0.1",
-    "@test/lib-b": "^0.0.1"
+    "@testpolymon/lib-a": "^0.0.1",
+    "@testpolymon/lib-b": "^0.0.1"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "^15.2.6",

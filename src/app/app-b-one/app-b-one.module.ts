@@ -6,7 +6,7 @@ import {
   ComponentAComponent,
   ComponentAModule,
   ComponentBModule,
-} from '@test/lib-a/components';
+} from '@testpolymon/lib-a/components';
 
 import { AppBOneComponent } from './app-b-one.component';
 
