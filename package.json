@@ -4,8 +4,7 @@
   "scripts": {
     "ng": "ng",
     "build": "ng build",
-    "serve": "ng serve",
-    "test": "ng test"
+    "serve": "ng serve"
   },
   "private": true,
   "dependencies": {
