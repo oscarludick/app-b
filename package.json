@@ -6,7 +6,7 @@
     "build": "ng build",
     "serve": "ng serve",
     "test": "ng test",
-    "pre-commit": "echo 'app-b'"
+    "command": "test a"
   },
   "private": true,
   "dependencies": {
