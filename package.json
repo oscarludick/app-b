@@ -6,7 +6,7 @@
     "build": "ng build",
     "serve": "ng serve",
     "test": "ng test",
-    "command": "test b"
+    "command": "test c"
   },
   "private": true,
   "dependencies": {
