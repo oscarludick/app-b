@@ -1,33 +1,36 @@
-import { TestBed } from '@angular/core/testing';
-import { RouterTestingModule } from '@angular/router/testing';
+// import { TestBed } from '@angular/core/testing';
+// import { RouterTestingModule } from '@angular/router/testing';
 import { AppComponent } from './app.component';
 
 describe('AppComponent', () => {
-  beforeEach(async () => {
-    await TestBed.configureTestingModule({
-      imports: [RouterTestingModule],
-      declarations: [AppComponent],
-    }).compileComponents();
+  let component: AppComponent;
+
+  beforeEach(() => {
+    component = new AppComponent();
   });
 
-  it('should create the app', () => {
-    const fixture = TestBed.createComponent(AppComponent);
-    const app = fixture.componentInstance;
-    expect(app).toBeTruthy();
+  it('should create an instance of AppComponent', () => {
+    expect(component).toBeTruthy();
   });
 
-  it(`should have as title 'app-b'`, () => {
-    const fixture = TestBed.createComponent(AppComponent);
-    const app = fixture.componentInstance;
-    expect(app.title).toEqual('app-b');
+  it('should set the initial value of title to "app-b"', () => {
+    expect(component.title).toEqual('app-b');
   });
 
-  it('should render title', () => {
-    const fixture = TestBed.createComponent(AppComponent);
-    fixture.detectChanges();
-    const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('.content span')?.textContent).toContain(
-      'app-b app is running!'
-    );
+  it('should return an empty string when calling functionThree', () => {
+    expect(component.funtionThree()).toEqual('');
+  });
+
+  it('should concatenate the value returned from onListen() to the title property when calling onClick()', () => {
+    component.onClick(1);
+    expect(component.title).toEqual('app-b1');
+  });
+
+  it('should return the same value that was passed as argument when calling onListen()', () => {
+    expect(component.onListen(2)).toEqual(2);
+  });
+
+  it('should return the number 1 when calling _funcionOne()', () => {
+    expect(component['_funcionOne']()).toEqual(1);
   });
 });
